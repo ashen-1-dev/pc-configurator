@@ -12,10 +12,10 @@ class Build
     public function __construct()
     {
         $this->components = [];
-        $this->change_state(new NotReadyState($this));
+        $this->setState(new NotReadyState($this));
     }
 
-    private function change_state($build_state) {
+    public function setState($build_state) {
         $this->build_state = $build_state;
     }
 
@@ -30,9 +30,9 @@ class Build
     }
     public function changeState() {
         if($this->isCompatible())
-            $this->change_state(new ReadyState($this));
+            $this->setState(new ReadyState($this));
         else
-        $this->change_state(new NotReadyState($this));
+        $this->setState(new NotReadyState($this));
     }
 
     public function save() {
