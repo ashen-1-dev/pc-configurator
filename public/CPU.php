@@ -4,6 +4,7 @@ abstract class CPU
 {
     private $name;
 
+
     /**
      * @return mixed
      */

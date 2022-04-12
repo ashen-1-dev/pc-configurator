@@ -6,4 +6,9 @@ class AMDFactory implements IComponentFactory
     {
         return new AMDCPU();
     }
+
+    public function createGPU()
+    {
+        return new AMDGPU();
+    }
 }

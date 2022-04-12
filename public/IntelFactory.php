@@ -6,4 +6,9 @@ class IntelFactory implements IComponentFactory
     {
         return new IntelCPU();
     }
+
+    public function createGPU()
+    {
+        return new IntelGPU();
+    }
 }
