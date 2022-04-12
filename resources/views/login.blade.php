@@ -18,7 +18,7 @@
     <div class="vertical-line"></div>
     <div class="auth-container">
         <h1>Впервые на сайте?</h1>
-        <h2 style="text-align: center;">Пройдите регистрацию</h2>
+        <h2 style=" text-align: center;">Пройдите регистрацию</h2>
         <form action="/login/register" method="post">
             @csrf
             <h2>Почтовый адрес</h2>

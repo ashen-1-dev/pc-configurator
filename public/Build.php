@@ -17,8 +17,8 @@ class Build implements IBuild
 
     public function remove(Component $component)
     {
-        if(in_array($component, $this->components));
-            array_diff($this->components, [$component]);
+        if($key = array_search($component, $this->components));
+            unset($this->components[$key]);
 
     }
 

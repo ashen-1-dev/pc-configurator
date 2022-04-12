@@ -26,6 +26,12 @@ $build->add($videocard);
 
 echo '<pre>' . print_r($build->show(), true) . '</pre>';
 
+$build->remove($videocard);
+
+echo '<pre>' . print_r($build->show(), true) . '</pre>';
+
+
+
 
 
 
